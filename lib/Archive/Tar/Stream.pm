@@ -21,11 +21,11 @@ Archive::Tar::Stream - pure perl IO-friendly tar file management
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 =head1 SYNOPSIS
@@ -206,6 +206,7 @@ sub AddLink {
   my $header = $Self->BlankHeader(@_);
   $header->{name} = $name;
   $header->{linkname} = $linkname;
+  $header->{typeflag} = 2;
 
   return $Self->WriteHeader($header);
 }

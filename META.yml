@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Archive-Tar-Stream
-version:            0.01
+version:            0.02
 abstract:           pure perl IO-friendly tar file management
 author:
     - Bron Gondwana <perlcode@brong.net>
@@ -16,7 +16,7 @@ no_index:
     directory:
         - t
         - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+generated_by:       ExtUtils::MakeMaker version 6.57_05
 meta-spec:
     url:      http://module-build.sourceforge.net/META-spec-v1.4.html
     version:  1.4
